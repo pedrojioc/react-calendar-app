@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+/* import './assets/fonts/NunitoSans-Regular.ttf';
+import './App.css' */
+import './assets/css/global.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

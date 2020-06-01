@@ -1,0 +1,22 @@
+.container {
+  max-width: 98%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 15rem 1fr;
+  column-gap: 1rem;
+}
+.leftSideBar {
+  position: relative;
+}
+.leftSideBar, .calendarContent {
+}
+
+.calendarContent {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}

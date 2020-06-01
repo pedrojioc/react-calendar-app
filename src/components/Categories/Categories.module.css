@@ -1,0 +1,94 @@
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.categories .categoriesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoriesHeader span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #383c42;
+}
+
+.iconAdd {
+  width: 1rem;
+  height: 1rem;
+  padding: 5px;
+  border-radius: 50%;
+  fill: #455AF7;
+  transition: background-color ease 0.3s;
+}
+.iconAdd:hover {
+  cursor: pointer;
+  background-color: rgba(73, 92, 232, 0.32);;
+}
+.iconRemove {
+  width: 1rem;
+  height: 1rem;
+  padding: 5px;
+  fill: rgb(202, 202, 202);
+  transition: fill ease-out 0.2s;
+}
+.iconRemove:hover {
+  cursor: pointer;
+  fill: #f44336 !important;
+}
+
+.categoriesBody {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+/* Category */
+.categoriesBody .category {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.category:hover {
+  cursor: pointer;
+}
+.nameAndColor {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Name of category */
+.nameAndColor span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+/* Color of category */
+.nameAndColor div {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.selected {
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  transition: padding 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.selected::before {
+  content: "✔";
+}

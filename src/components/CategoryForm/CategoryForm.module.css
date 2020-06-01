@@ -1,0 +1,110 @@
+.categoryForm {
+  position: absolute;
+  z-index: 3;
+  width: 17rem;
+  top: 0;
+  left: 16rem;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 12px;
+}
+/* .categoryForm::before {
+  content: " ";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+} */
+.categoryForm .formHeader {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.categoryForm .formBody {
+  display: flex;
+  flex-direction: column;
+}
+.colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+/* Color */
+.colors .color {
+  width: 1rem;
+  height: 1rem;
+  padding: 3px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: transform ease-out 0.2s;
+}
+.colors .color:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  /* border-color: rgb(91, 89, 97); */
+}
+.iconCheck {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.iconCheck::before {
+  content: "✔";
+}
+.categoryForm .formFooter {
+  display: flex;
+  margin-top: 1.2rem;
+  align-items: center;
+}
+
+.overlay {
+  /* display: none; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.error {
+  font-size: 0.9rem;
+  padding-left: 5px;
+  color: red;
+}
+
+.iconPaint {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 10px;
+  fill: #a4a6b3;
+}
+.iconPaint:hover {
+  cursor: pointer;
+}
+.separator {
+  height: 1.2rem;
+  width: 1px;
+  margin-left: 5px;
+  background-color: lightgray;
+}
+
+.inputColor {
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
