@@ -19,6 +19,7 @@ function Home() {
     '#0079BF',
     '#00C2E0'
   ]
+  const YEAR = new Date().getFullYear()
   const [visible, setVisible] = useState(false)
   const [category, setCategory] = useState(null)
   const [markers, setMarkers] = useState({})
@@ -90,8 +91,8 @@ function Home() {
               <Month
                 monthName={month}
                 monthNumber={index}
-                year={2020}
-                key={`2020${index}`}
+                year={YEAR}
+                key={`${YEAR}${index}`}
                 onSelectDay={handleSelectDay}
                 markers={markers}
               />
